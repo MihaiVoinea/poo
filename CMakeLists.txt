@@ -2,11 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 project(poo)
 
 set(CMAKE_CXX_STANDARD 14)
-#set(CMAKE_USE_WINSSL ON)
-#set(USE_WINSSL ON)
-#set(CMAKE_USE_OPENSSL OFF)
-#set(USE_OPENSSL OFF)
-#set(BUILD_CPR_TESTS OFF)
 add_executable(poo main.cpp)
 
 include(FetchContent)
