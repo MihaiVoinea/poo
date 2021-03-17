@@ -1,8 +1,17 @@
 cmake_minimum_required(VERSION 3.16)
 project(poo)
+include_directories(
+        ${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/src
+)
+
+file(GLOB my_classes
+        "${PROJECT_SOURCE_DIR}/include/*.h"
+        "${PROJECT_SOURCE_DIR}/src/*.cpp"
+        )
 
 set(CMAKE_CXX_STANDARD 14)
-add_executable(poo main.cpp)
+add_executable(poo main.cpp ${my_classes})
 
 include(FetchContent)
 # cpr:
